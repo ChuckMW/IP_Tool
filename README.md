@@ -5,6 +5,8 @@
 
 This PowerShell script performs a network scan by pinging all IP addresses in the local subnet and logs the results, including the ARP table before and after the test. It checks for reachable IP addresses, their response times, TTL, and MAC addresses. The results are saved in a log file with a timestamped name.
 
+
+
 ## Features
 - Retrieves the current IP address and subnet mask.
 - Generates a log file with the current date and time.
@@ -13,9 +15,13 @@ This PowerShell script performs a network scan by pinging all IP addresses in th
 - Logs MAC addresses, response time, TTL, and IP reachability status.
 - Saves the log results in a text file for later analysis.
 
+
+
 ## Requirements
 - PowerShell (tested on Windows)
 - Admin privileges (for accessing ARP table and network interfaces)
+
+
 
 ## Usage
 1. **Download the script** and save it as `PingTest.ps1` (or any name you prefer).
@@ -26,26 +32,6 @@ This PowerShell script performs a network scan by pinging all IP addresses in th
 
 
 
-##Example Output
-
-Ping Test Started at 2025-05-17 12:30:45
-
-Current ARP Table at 2025-05-17 12:30:45
-Interface  Address                LinkLayerAddress  State
----------  -------                ----------------  -----
-Ethernet0  192.168.1.1            00-14-22-01-23-45  Reachable
-
-2025-05-17 12:31:00 - 192.168.1.1 is up | ResponseTime: 1 ms | TTL: 128 | MAC Address: 00-14-22-01-23-45
-2025-05-17 12:31:01 - 192.168.1.2 is down
-...
-
-Updated ARP Table after Ping Test at 2025-05-17 12:35:00
-Interface  Address                LinkLayerAddress  State
----------  -------                ----------------  -----
-Ethernet0  192.168.1.1            00-14-22-01-23-45  Reachable
-Ethernet0  192.168.1.3            00-14-22-01-23-46  Reachable
-
-Ping Test Completed at 2025-05-17 12:35:00
 
 
 
