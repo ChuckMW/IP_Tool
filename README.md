@@ -30,12 +30,6 @@ This PowerShell script performs a network scan by pinging all IP addresses in th
    ```powershell
    .\PingTest.ps1
 
-
-
-
-
-
-
 ##Notes
 The script assumes a subnet mask of /24 (Class C) and will only scan IP addresses from 1 to 254.
 
